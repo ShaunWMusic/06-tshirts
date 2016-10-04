@@ -14,19 +14,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 
 .grid {
-  margin: 1rem;
-}
-
-.outer {
   display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  background: $c-brand-primary;
-}
+  margin: 1rem;
 
-.inner {
-  flex-grow: 1;
-  width: calc(100% * 1 /3 - 1rem - 1rem);
-  max-width: $c-max-width;
-  background: $c-brand-white;
+  &__item {
+    width: calc(100% * 2 / 3 - 1rem);
+    max-width: 60rem;
+  }
 }
