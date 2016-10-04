@@ -20,6 +20,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
+  color: $c-brand-primary;
 
   &__item {
     width: calc(100% * 1 / 3 - 1rem - 1rem);
@@ -32,21 +33,52 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .shop-item {
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  border: 0.1rem solid;
+  border: 0.1rem solid $c-brand-primary;
 
   &__pic {
     padding: 1rem;
   }
 
-  &__actions {
-    margin: 0;
-    padding: 0.6rem;
-    border-top: 0.1rem solid;
-  }
 
   &__details {
+    // position: relative;
     padding: 1rem;
   }
+
+  &__actions {
+    display: flex;
+    padding: 0;
+    // border-top: 0.06rem solid;
+  }
+
+  &__actions-btn {
+    width: calc(100% * 1 / 5);
+    padding: 0.5rem;
+    border: 0.1rem solid $c-brand-primary;
+    background: $c-brand-white;
+    color: $c-brand-primary;
+  }
+
+}
+
+.shop-menu {
+  position: relative;
+
+  &__tooltip {
+    // display: none;
+    position: absolute;
+    bottom: 64%;
+    left: -1%;
+}
+
+  &__tooltip-item:hover span {
+    // padding: 1.5rem;
+    transform: scale(1.2);
+
+
+    }
+
 }
