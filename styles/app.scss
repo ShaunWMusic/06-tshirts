@@ -1,8 +1,15 @@
-// @import 'yoga-sass/assets/yoga';
-// @import 'normalize-css/normalize';
+$c-brand-primary: #3473b5;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 
-@import 'adonis';
+
+.grid {
+  margin: 1;
+}
+
+.outer {
+  padding: 1rem;
+  background: $c-brand-primary;
+}
