@@ -1,9 +1,9 @@
 $c-brand-primary: #3473b5;
 $c-brand-white: #fff;
-$c-pink: #e577aa;
-$c-blue: #72bbe9;
 $c-green: #7abe93;
 $c-yellow: #e5b178;
+$c-blue: #72bbe9;
+$c-pink: #e577aa;
 $max-width: 60rem;
 $gutter: 1rem;
 
@@ -51,6 +51,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   &__details {
     position: relative;
     padding: $gutter;
+
+    @media (max-width: 760px)  {
+      padding-top: 4rem;
+    }
   }
 
   &__actions {
@@ -93,7 +97,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       @media (max-width: 760px) {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
       }
     }
   }
@@ -109,21 +112,40 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       bottom: 50%;
       left: auto;
       transform: translate(0, 50%);
+
     }
 
   }
 
   &__tooltip-item {
+    width: 100%;
     border: 0.2rem solid;
     background: ($c-brand-white);
     font-size: 2rem;
 
+    &--color-green {
+      border: solid ($c-brand-primary);
+      color: ($c-green);
+    }
+
+    &--color-yellow {
+      border: solid ($c-brand-primary);
+      color: ($c-yellow);
+    }
+
+    &--color-blue {
+      border: solid ($c-brand-primary);
+      color: ($c-blue);
+    }
+
+    &--color-red {
+      border: solid ($c-brand-primary);
+      color: ($c-pink);
+    }
+
     &:hover {
       transform: scale(1.2);
 
-      &--color-green {
-        color: ($c-green);
-      }
     }
   }
 }
