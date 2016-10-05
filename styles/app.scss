@@ -43,6 +43,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   padding: 0;
   border: 0.2rem solid $c-brand-primary;
 
+  &:hover {
+    // .shop-menu__tooltip {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+    .shop-menu__tooltip-size {
+    display: flex;
+    flex-direction: column;
+
+    }
   }
 
   &__pic {
@@ -54,6 +64,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     // position: relative;
     padding: $gutter;
   }
+
   &__actions {
     display: flex;
     padding: 0;
@@ -75,26 +86,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       transform: scale(1.2);
       // background: ($c-brand-primary);
       // color: ($c-brand-white);
-
-
     }
   }
 }
 
-
-@font-face {
-
-:hover {
-  // .shop-menu__tooltip {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  .shop-menu__tooltip-size {
-    display: flex;
-    flex-direction: column;
-
-  }
-}
 
 .shop-menu {
   position: relative;
