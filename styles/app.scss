@@ -43,17 +43,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   padding: 0;
   border: 0.2rem solid $c-brand-primary;
 
-  &:hover {
-    // .shop-menu__tooltip {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
-    .shop-menu__tooltip-size {
-    display: flex;
-    flex-direction: column;
-
-    }
-  }
 
   &__pic {
     padding: $gutter;
@@ -94,6 +83,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .shop-menu {
   position: relative;
 
+  &:hover {
+    .shop-menu__tooltip {
+      display: flex;
+      flex-direction: column;
+    }
+    .shop-menu__tooltip-size {
+      display: flex;
+      flex-direction: column;
+
+    }
+}
   &__tooltip {
     display: none;
     position: absolute;
