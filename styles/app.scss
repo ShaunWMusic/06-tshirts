@@ -14,7 +14,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'resets';
 
 .container {
-  margin: $guuter;
+  margin: $gutter;
 }
 
 .grid {
@@ -65,8 +65,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     color: $c-brand-primary;
 
     &:hover {
-      background: invert($c-brand-white);
-
+      // display: block;
+      transform: scale(1.2);
+      background: ($c-brand-primary);
+      color: ($c-brand-white);
     }
   }
 }
@@ -80,15 +82,20 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     position: absolute;
     bottom: 64%;
     left: -1%;
+
+    &:hover {
+      transform: scale(1.2);
+      background: ($c-brand-primary);
+      color: ($c-brand-white);
+
+    }
 }
 
   &__tooltip-item {
-    padding: 0.5rem 1.67rem;
     border: 0.04rem solid;
 
     &:hover {
-      padding: 0.5rem;
       transform: scale(1.2);
-  }
+}
 }
 }
