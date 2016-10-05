@@ -37,7 +37,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  border: 0.1rem solid $c-brand-primary;
+  border: 0.2rem solid $c-brand-primary;
 
 
   &__pic {
@@ -60,15 +60,15 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   &__actions-btn {
     width: calc(100% * 1 / 5);
     padding: 0.5rem;
-    border: 0.1rem solid $c-brand-primary;
+    border: 0.2rem solid $c-brand-primary;
     background: $c-brand-white;
-    color: $c-brand-primary;
+    // color: $c-brand-primary;
 
     &:hover {
       // display: block;
       transform: scale(1.2);
-      background: ($c-brand-primary);
-      color: ($c-brand-white);
+      // background: ($c-brand-primary);
+      // color: ($c-brand-white);
     }
   }
 }
@@ -85,17 +85,21 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
     &:hover {
       transform: scale(1.2);
-      background: ($c-brand-primary);
-      color: ($c-brand-white);
+      // background: ($c-brand-primary);
+      // color: ($c-brand-white);
 
     }
 }
 
   &__tooltip-item {
-    border: 0.04rem solid;
+    border: 0.2rem solid;
 
     &:hover {
       transform: scale(1.2);
+
+      &--color-green {
+        color: ($c-green);
+      }
 }
 }
 }
