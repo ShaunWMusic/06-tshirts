@@ -4,7 +4,8 @@ $c-pink: #e577aa;
 $c-blue: #72bbe9;
 $c-green: #7abe93;
 $c-yellow: #e5b178;
-$c-max-width: 60rem;
+$max-width: 60rem;
+$gutter: 1rem;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
@@ -13,18 +14,18 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'resets';
 
 .container {
-  margin: 1rem;
+  margin: $guuter;
 }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin: $gutter;
   color: $c-brand-primary;
 
   &__item {
     width: calc(100% * 1 / 3 - 1rem - 1rem);
-    margin: 1rem;
+    margin: $gutter;
     text-align: center;
     // border: 0.5rem solid black;
 
@@ -40,13 +41,13 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 
   &__pic {
-    padding: 1rem;
+    padding: $gutter;
   }
 
 
   &__details {
     // position: relative;
-    padding: 1rem;
+    padding: $gutter;
   }
 
   &__actions {
@@ -65,7 +66,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
     &:hover {
       background: invert($c-brand-white);
-      cursor: pointer;
 
     }
   }
@@ -83,13 +83,12 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
   &__tooltip-item {
-    // display: none;
+    padding: 0.5rem 1.67rem;
+    border: 0.04rem solid;
 
-    &:hover span {
+    &:hover {
       padding: 0.5rem;
-      border: 0.5rem solid;
       transform: scale(1.2);
-      cursor: pointer;
   }
 }
 }
