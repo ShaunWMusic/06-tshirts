@@ -96,7 +96,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       flex-direction: column;
       @media (max-width: 760px) {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
       }
     }
   }
@@ -106,6 +106,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     position: absolute;
     bottom: 100%;
     left: -1%;
+    width: 100%;
 
     @media (max-width: 720px) {
       right: 100%;
