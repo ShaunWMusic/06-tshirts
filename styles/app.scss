@@ -20,7 +20,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .grid {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   margin: $gutter;
   color: $c-brand-primary;
 
@@ -42,7 +41,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-direction: column;
   margin: 0;
   padding: 0;
-  border: 0.2rem solid $c-brand-primary;
+  border-top: 0.2rem solid $c-brand-primary;
+  border-right: 0.2rem solid $c-brand-primary;
+  border-left: 0.2rem solid $c-brand-primary;
 
   &__pic {
     padding: $gutter;
@@ -67,11 +68,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
   &__actions-btn {
     flex-grow: 1;
-    // padding: 0.5rem;
-    border: 0.2rem solid $c-brand-primary;
     background: $c-brand-white;
     color: $c-brand-primary;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   @media (max-width: 780px) {
     flex-direction: row;
@@ -91,6 +90,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
         flex-direction: row-reverse;
       }
     }
+
   }
 
   &__tooltip {
@@ -112,8 +112,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
   &__tooltip-item {
     width: 100%;
-    border: 0.2rem solid;
     background: ($c-brand-white);
+    border: 0.2rem solid $c-brand-primary;
     font-size: 2rem;
 
     &--color-green {
@@ -141,4 +141,29 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
     }
   }
+}
+
+@media(max-width: 778px) {
+  .shop-item {
+    border-bottom: 0.2rem solid $c-brand-primary;
+  }
+  .shop-item__actions-btn {
+    border-left: 0.2rem solid $c-brand-primary;
+    border-bottom: 0.2rem solid $c-brand-primary;
+
+
+  }
+}
+
+//borders for desktop
+@media(min-width: 779px) {
+.shop-item__actions-btn {
+  border-top: 0.2rem solid $c-brand-primary;
+  border-bottom: 0.2rem solid $c-brand-primary;
+  border-right: 0.2rem solid $c-brand-primary;
+
+}
+.desktop-right {
+  border-right: 0;
+}
 }
