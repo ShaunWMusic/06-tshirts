@@ -72,17 +72,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     background: $c-brand-white;
     color: $c-brand-primary;
     font-size: 2rem;
-
-    &:hover {
-      // display: block;
-      transform: scale(1.2);
-      // background: ($c-brand-primary);
-      // color: ($c-brand-white);
-    }
   }
   @media (max-width: 780px) {
     flex-direction: row;
-    // background: blue;
   }
 
 }
