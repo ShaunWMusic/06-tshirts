@@ -103,7 +103,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     width: 100%;
 
     @media (max-width: 720px) {
-      right: 100%;
+      right: 109%;
       bottom: 50%;
       left: auto;
       transform: translate(0, 50%);
@@ -160,6 +160,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
   .shop-menu__tooltip-item {
     border-right: 0;
+
   }
 }
 
