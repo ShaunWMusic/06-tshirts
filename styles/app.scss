@@ -99,6 +99,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     bottom: 100%;
     left: 0;
     width: 100%;
+    transform: translate( 0, -2%);
+    width: 100%;
 
     @media (max-width: 720px) {
       right: 100%;
@@ -136,11 +138,13 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       color: ($c-pink);
     }
 
-    &:hover {
-      transform: scale(1.2);
-
-    }
   }
+}
+.shop-menu__tooltip-item span:hover {
+  transform: scale(1);
+}
+.shop-menu__tooltip-item:hover {
+  font-size: 2.5rem;
 }
 
 @media(max-width: 778px) {
@@ -148,10 +152,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     border-bottom: 0.2rem solid $c-brand-primary;
   }
   .shop-item__actions-btn {
-    border-left: 0.2rem solid $c-brand-primary;
     border-bottom: 0.2rem solid $c-brand-primary;
-
-
+    border-left: 0.2rem solid $c-brand-primary;
+  }
+  .mobile-bottom {
+    border-bottom: 0;
+  }
+  .shop-menu__tooltip-item {
+    border-right: 0;
   }
 }
 
@@ -165,5 +173,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 .desktop-right {
   border-right: 0;
+}
+
+.shop-menu__tooltip-item {
+  border-bottom: 0;
+
 }
 }
